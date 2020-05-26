@@ -1,0 +1,16 @@
+
+<script>
+   export let size = "100%";
+   let customClass = "";
+   export { customClass as class };
+
+   if (size !== "100%") {
+   size = size.slice(-1) === 'x' 
+         ? size.slice(0, size.length -1) + 'em'
+         : parseInt(size) + 'px';
+   }
+</script>
+
+<svg width={size} height={size} class='hero {customClass}' viewBox="0 0 20 20" fill="currentColor">
+  <path fill-rule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm0 8H7v4h6v-4z" clip-rule="evenodd"/>
+</svg>

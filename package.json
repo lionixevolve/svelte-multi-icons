@@ -1,0 +1,24 @@
+{
+  "name": "svelte-multi-icons",
+  "version": "1.0.0",
+  "description": "Svelte packaged Icons from multiple free sources (Heroicons)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lionixevolve/svelte-multi-icons.git"
+  },
+  "keywords": [
+    "svelte",
+    "icons",
+    "svg"
+  ],
+  "author": "Justin Voitel & Matias Barletta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lionixevolve/svelte-multi-icons/issues"
+  },
+  "homepage": "https://github.com/lionixevolve/svelte-multi-icons#readme"
+}
