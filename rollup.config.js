@@ -7,11 +7,11 @@ import { terser } from 'rollup-plugin-terser';
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
-	input: 'src/main.js',
+	input: 'main.js',
 	output: {
 		sourcemap: true,
-		format: 'iife',
-		name: 'app',
+		format: 'cjs',
+		name: 'svelte-multi-icons',
 		file: 'public/build/bundle.js'
 	},
 	plugins: [
@@ -20,9 +20,10 @@ export default {
 			dev: !production,
 			// we'll extract any component CSS out into
 			// a separate file - better for performance
-			css: css => {
-				css.write('public/build/bundle.css');
-			}
+			// Disabled the CSS as we are not using this
+			// css: css => {
+			// 	css.write('public/build/bundle.css');
+			// }
 		}),
 
 		// If you have external dependencies installed from
